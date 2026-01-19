@@ -122,3 +122,10 @@ INSERT INTO hardware (id, humidity, temperature, remote_control)
 VALUES (1, 65.5, 22.3, 0)
 ON CONFLICT (id) DO UPDATE
 SET humidity = EXCLUDED.humidity, temperature = EXCLUDED.temperature, remote_control = EXCLUDED.remote_control;
+
+-- Test Accounts
+INSERT INTO users (login, password_hash, role)
+VALUES 
+  ('guest', 'guest123', 'guest'),
+  ('expert', 'expert123', 'expert')
+ON CONFLICT (login) DO NOTHING;

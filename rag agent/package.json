@@ -1,0 +1,25 @@
+{
+  "name": "rag-agent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@langchain/community": "^1.1.4",
+    "@langchain/core": "^1.1.15",
+    "@langchain/google-genai": "^2.1.10",
+    "@langchain/textsplitters": "^1.0.1",
+    "@supabase/supabase-js": "^2.90.1",
+    "langchain": "^1.2.10",
+    "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.9"
+  }
+}
